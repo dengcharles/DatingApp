@@ -30,6 +30,7 @@ namespace API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<AppUser>> GetUser(int id)
         {
+            //Test change
             return await _context.Users.FindAsync(id);
         }
     }
